@@ -34,6 +34,12 @@
     justify-content: center;
     border: 10px black double;
     border-radius: 500px;
+    box-shadow: 0 2px 4px black;
+    transition: transform 0.8s ease-in-out;
+}
+
+.Picture:hover{
+    transform: scale(0.95);
 }
 
 .Intro {
@@ -41,7 +47,33 @@
     flex-direction: column;
     margin-top: 8%;
     align-items: center;
+}
 
+.typed-text{
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(40 , end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret{
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: black;
+    }
 }
 
 .Introduction {
