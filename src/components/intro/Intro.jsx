@@ -13,7 +13,7 @@ const Intro = () => {
             </div>
             <div className='Introduction'>
                 <p style={{ fontSize: 'X-Large', color: 'black' }}>This is Ibtihaj Saleem a BS-Comuter Science studnet at Hamdard University.</p>
-                <p style={{ fontSize: 'X-Large', color: 'black' }}>Currently a Development Intern at 3Const Pvt (ltd). </p>
+                <p style={{ fontSize: 'X-Large', color: 'black' }}>A Front-end Developer at 3Const Pvt (ltd). </p>
             </div>
         </div>
     )
