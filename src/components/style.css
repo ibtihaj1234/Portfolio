@@ -1,0 +1,90 @@
+.Navbar {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+}
+
+.Navhalf1 {
+    width: 50%;
+}
+
+.Navhalf2 {
+    width: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.Navbaritems {
+    color: orangered;
+    margin: 2%;
+    text-decoration: none;
+}
+
+.Picture {
+    width: 20%;
+    overflow: hidden;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 10px black double;
+    border-radius: 500px;
+}
+
+.Intro {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8%;
+    align-items: center;
+
+}
+
+.Introduction {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.block {
+    display: block;
+    width: 100%;
+    border-radius: 3px;
+    border: none;
+    background-color: orangered;
+    padding: 2px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.InputButton {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 3px;
+    border-style: inherit;
+    padding: 5px;
+}
+
+.Navbaritems:hover {
+    color: white;
+}
+
+.todo {
+    margin-top: 8%;
+}

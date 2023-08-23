@@ -1,0 +1,38 @@
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.calcScr {
+    width: 100%;
+    background-color: aliceblue;
+}
+
+.button {
+    background-color: grey;
+    height: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    flex: 1;
+    border: 0;
+    width: 100%;
+}
+
+.input-wrapper {
+    height: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 15px;
+}
+
+.result {
+    flex: 1;
+}
+
+.test {
+    flex: 1;
+}
