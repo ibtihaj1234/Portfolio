@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 import Todolist from '../views/Todolist'
 import Home from '../views/Home'
 import Calculator from '../views/Calculator'
+
 const Navi = () => {
     return (
         <>

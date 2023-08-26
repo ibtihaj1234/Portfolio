@@ -23,9 +23,9 @@ const Todos = ({
 
     // Cancel Button
 
-    const cancel = (element) => {
-        setUpdateItem(element)
+    const cancel = (elem) => {
         setTextfield(false)
+        setUpdateItem({})
     }
 
     // Update Text Field
@@ -38,6 +38,7 @@ const Todos = ({
 
     const handleUpdate = (e) => {
         // const dispatch = useDispatch(updatedTodo)
+        !newdata ? alert('Type something') :
         setList(prev => prev.map(e => e.id === updateItem.id ? { ...e, name: newdata } : e))
         setUpdateItem({})
         setNewdata("")
@@ -90,7 +91,7 @@ const Todos = ({
 
                         {/* Options On Edit*/}
 
-                        {updateItem?.id === elem?.id ? (
+                        {updateItem.id === elem.id ? (
                             <>
                                 <InputComponent type={"text"} onChange={Newtext} value={newdata} />
                                 <ButtonComponent title="Update" onClick={() => handleUpdate(elem.id)} />
