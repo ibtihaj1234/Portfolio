@@ -4,6 +4,8 @@ import Todolist from '../views/Todolist'
 import Home from '../views/Home'
 import Calculator from '../views/Calculator'
 import Jokes from '../views/Jokes'
+import Login from '../views/auth/Login'
+import Signup from '../views/auth/Signup'
 
 const Navi = () => {
     return (
@@ -13,6 +15,8 @@ const Navi = () => {
                 <Route path="/todolist" element={<Todolist />} />
                 <Route path="/calculator" element={<Calculator />} />
                 <Route path="/jokes" element={<Jokes />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/signup" element={<Signup />} />
             </Routes>
         </>
     )

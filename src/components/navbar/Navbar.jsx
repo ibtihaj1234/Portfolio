@@ -8,6 +8,8 @@ const Navbar = () => {
                 <h2 style={{ color: 'orangered', fontFamily: 'Cursive' }}>IBTIHAJ <span style={{ color: 'white' }}>SALEEM</span></h2>
             </div>
             <div className='Navhalf2'>
+                <Link className="Navbaritems" to="../Signup">Signup</Link>
+                <Link className="Navbaritems" to="../Login">Login</Link>
                 <Link className="Navbaritems" to="../Jokes">Jokes</Link>
                 <Link className="Navbaritems" to="../Calculator">Calculator</Link>
                 <Link className="Navbaritems" to="../Todolist">Todolist</Link>
