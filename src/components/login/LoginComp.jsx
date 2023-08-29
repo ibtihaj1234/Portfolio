@@ -9,7 +9,7 @@ const LoginComp = () => {
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
-    const [loading, setloading] = useState(true)
+    const [loading, setLoading] = useState(true)
 
     const Clear = () => {
         setEmail('')
@@ -22,13 +22,13 @@ const LoginComp = () => {
             return
         }
 
-        setloading(false)
+        setLoading(false)
 
         axios.post('https://enjoy-19070.botics.co/api/v1/login/', {
             username: email.trim(),
             password: password.trim(),
-        }).then(reult => {
-            console.log("Result ==> ", reult)
+        }).then(result => {
+            console.log("Result ==> ", result)
         })
             .catch(err => console.log("Error while login!", err))
     }
@@ -56,7 +56,7 @@ const LoginComp = () => {
                     <Button
                         bgcolor='blue'
                         title='Clear'
-                        onClick={() => {Clear() ; setloading(true)}}
+                        onClick={() => {Clear() ; setLoading(true)}}
                     />
                     <Button
                         bgcolor='blue'
