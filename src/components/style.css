@@ -6,6 +6,7 @@
     position: fixed;
     width: 100%;
     top: 0%;
+    z-index: 1000;
 }
 
 .Navhalf1 {
@@ -89,6 +90,8 @@
 img {
     height: 100%;
     width: 100%;
+    position: relative;
+    z-index: 999;
 }
 
 .block {

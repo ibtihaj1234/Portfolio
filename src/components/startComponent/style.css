@@ -1,0 +1,32 @@
+.page{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../assets/Background.jpeg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    color: antiquewhite;
+}
+
+.navitems{
+    text-decoration: none;
+    margin: 2%;
+    color: aliceblue;
+}
+
+.navitems:hover{
+    color: black;
+}
+
+.animate{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}

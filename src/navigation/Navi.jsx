@@ -6,12 +6,14 @@ import Calculator from '../views/Calculator'
 import Jokes from '../views/Jokes'
 import Login from '../views/auth/Login'
 import Signup from '../views/auth/Signup'
+import Start from '../views/Start'
 
 const Navi = () => {
     return (
         <>
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/" element={<Start />} />
+                <Route path="/home" element={<Home />} />
                 <Route path="/todolist" element={<Todolist />} />
                 <Route path="/calculator" element={<Calculator />} />
                 <Route path="/jokes" element={<Jokes />} />
