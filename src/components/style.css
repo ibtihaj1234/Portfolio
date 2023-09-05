@@ -37,6 +37,7 @@
     border-radius: 500px;
     box-shadow: 0 2px 4px black;
     transition: transform 0.8s ease-in-out;
+    z-index: 999;
 }
 
 .Picture:hover{
@@ -128,6 +129,13 @@ img {
 
 .image{
     width: 30%;
+    box-shadow: 2px 2px 4px black;
+    transition: transform 0.8s ease-in-out;
+    z-index: 999;
+}
+
+.image:hover{
+    transform: scale(0.95);
 }
 
 .briefing{
