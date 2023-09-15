@@ -24,13 +24,17 @@ const LoginComp = () => {
 
         setLoading(false)
 
-        axios.post('https://enjoy-19070.botics.co/api/v1/login/', {
-            username: email.trim(),
-            password: password.trim(),
-        }).then(result => {
-            console.log("Result ==> ", result)
-        })
-            .catch(err => console.log("Error while login!", err))
+        axios.post(
+            'https://enjoy-19070.botics.co/api/v1/login/',
+            {
+                username: email.trim(),
+                password: password.trim(),
+            })
+            .then(result => {
+                console.log("Result ==> ", result)
+            })
+            .catch(err =>
+                console.log("Error while login!", err))
     }
 
     return (
@@ -56,7 +60,7 @@ const LoginComp = () => {
                     <Button
                         bgcolor='blue'
                         title='Clear'
-                        onClick={() => {Clear() ; setLoading(true)}}
+                        onClick={() => { Clear(); setLoading(true) }}
                     />
                     <Button
                         bgcolor='blue'

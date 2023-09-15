@@ -1,5 +1,5 @@
-import axios from 'axios'
 import React, { useState } from 'react';
+import axios from 'axios'
 import ButtonComponent from '../button/Button';
 import './style.css'
 const JokesComp = () => {
@@ -9,17 +9,22 @@ const JokesComp = () => {
     const [show, setShow] = useState(false)
 
     const API = () => {
-        axios.get("https://official-joke-api.appspot.com/random_joke").then(result => {
-            setJokes(result.data.setup)
-            setPunch(result.data.punchline)
-            setShow(true)
-        })
+        axios.get(
+            "https://official-joke-api.appspot.com/random_joke"
+        )
+            .then(result => {
+                setJokes(result.data.setup)
+                setPunch(result.data.punchline)
+                setShow(true)
+            })
 
     }
     return (
         <div className='Jokes'>
             <h1>{jokes}</h1>
-            {!show ? <h1>{punch}</h1> : ''}
+            {!show ?
+                <h1>{punch}</h1> : ''
+            }
             <div className='buttons'>
                 <ButtonComponent
                     title='Punch'

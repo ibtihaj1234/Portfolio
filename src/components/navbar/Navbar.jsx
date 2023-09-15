@@ -5,7 +5,14 @@ const Navbar = () => {
     return (
         <div className='Navbar'>
             <div className='Navhalf1'>
-                <h2 style={{ color: 'orangered', fontFamily: 'Cursive' }}>IBTIHAJ <span style={{ color: 'white' }}>SALEEM</span></h2>
+                <h2
+                    style={{
+                        color: 'orangered',
+                        fontFamily: 'Cursive'
+                    }}>
+                    IBTIHAJ <span
+                        style={{ color: 'white' }}
+                    >SALEEM</span></h2>
             </div>
             <div className='Navhalf2'>
                 <Link className="Navbaritems" to="../Signup">Signup</Link>

@@ -5,7 +5,13 @@ const InputComponent = (props) => {
     const { type, onChange, value, placeholder, style } = props
     return (
         <div>
-            <input className='InputButton' style={style} type={type} onChange={onChange} value={value} placeholder={placeholder} />
+            <input
+                className='InputButton'
+                style={style}
+                type={type}
+                onChange={onChange}
+                value={value}
+                placeholder={placeholder} />
         </div>
     )
 }

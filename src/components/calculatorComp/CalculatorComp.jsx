@@ -20,7 +20,6 @@ function CalculatorComp() {
 
     const calculateResult = () => {
         const input = text.join("")
-
         setResult(math.evaluate(input))
     }
 
@@ -51,7 +50,7 @@ function CalculatorComp() {
                 <CalcButton symbol={'='} color='orange' handleClick={calculateResult} />
                 <CalcButton symbol={'-'} handleClick={addText} color='orange' />
             </div>
-            <CalcButton symbol={'Clear'} handleClick={removeData} color='orange'/>
+            <CalcButton symbol={'Clear'} handleClick={removeData} color='orange' />
         </div>
     )
 }

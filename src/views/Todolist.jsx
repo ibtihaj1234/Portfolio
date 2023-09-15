@@ -14,7 +14,15 @@ const Todolist = () => {
     return (
         <div>
             <Navbar />
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems:'center' , width: '100%', backgroundColor: 'black' , height:'100vh' }}>
+            <div
+                style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    width: '100%',
+                    backgroundColor: 'black',
+                    height: '100vh'
+                }}>
                 {/* InputComponent */}
                 <Input
                     item={item}
@@ -27,7 +35,11 @@ const Todolist = () => {
 
                 <br /> <br />
                 {/* TodosComponent */}
-                {list.length === 0 ? <p style={{color:'white' , fontFamily:'cursive'}}>No Todos RN</p> :
+                {list.length === 0 ? <p
+                    style={{
+                        color: 'white',
+                        fontFamily: 'cursive'
+                    }}>No Todos RN</p> :
                     <Todos
                         list={list}
                         setList={setList}

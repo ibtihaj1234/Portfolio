@@ -39,7 +39,9 @@ const Todos = ({
     const handleUpdate = (e) => {
         // const dispatch = useDispatch(updatedTodo)
         !newdata ? alert('Type something') :
-        setList(prev => prev.map(e => e.id === updateItem.id ? { ...e, name: newdata } : e))
+            setList(prev =>
+                prev.map(e => e.id === updateItem.id ?
+                    { ...e, name: newdata } : e))
         setUpdateItem({})
         setNewdata("")
     }
@@ -57,16 +59,37 @@ const Todos = ({
     // COMPLETED
 
     const cutit = (elem, index,) => {
-        setList(prev => prev.map(e => e.id === elem.id ? { ...e, completed: !e.completed } : e))
+        setList(prev =>
+            prev.map(e => e.id === elem.id ?
+                { ...e, completed: !e.completed } : e))
     }
 
     return (
-        <div style={{ width: '80%', border: '5px solid orangered', borderRadius: '10px', height: '60vh', overflow: 'scroll', overflowX: 'none' }}>
+        <div
+            style={{
+                width: '80%',
+                border: '5px solid orangered',
+                borderRadius: '10px',
+                height: '60vh',
+                overflow: 'scroll',
+                overflowX: 'none'
+            }}>
             {list.map((elem, index) => {
                 return (
-                    <div key={elem.id} style={{ display: 'flex', justifyContent: "center", alignItems: "center", gap: 12, fontFamily: 'Cursive', color: 'white' }}>
+                    <div
+                        key={elem.id}
+                        style={{
+                            display: 'flex',
+                            justifyContent: "center",
+                            alignItems: "center",
+                            gap: 12,
+                            fontFamily: 'Cursive',
+                            color: 'white'
+                        }}>
                         <p
-                            style={elem.completed ? { textDecoration: 'line-through' } : {}}>
+                            style={elem.completed ?
+                                { textDecoration: 'line-through' } : {}
+                            }>
                             {elem.name}</p>
 
                         {/* Edit Button */}
@@ -85,7 +108,9 @@ const Todos = ({
                         {/* Completed Button */}
 
                         <ButtonComponent
-                            title={elem.completed ? "Incomplete" : "Completed"}
+                            title={elem.completed ?
+                                "Incomplete" : "Completed"
+                            }
                             onClick={() => cutit(elem, index)}
                         />
 
@@ -93,9 +118,16 @@ const Todos = ({
 
                         {updateItem.id === elem.id ? (
                             <>
-                                <InputComponent type={"text"} onChange={Newtext} value={newdata} />
-                                <ButtonComponent title="Update" onClick={() => handleUpdate(elem.id)} />
-                                <ButtonComponent title="Cancel" onClick={() => cancel(elem)} />
+                                <InputComponent
+                                    type={"text"}
+                                    onChange={Newtext}
+                                    value={newdata} />
+                                <ButtonComponent
+                                    title="Update"
+                                    onClick={() => handleUpdate(elem.id)} />
+                                <ButtonComponent
+                                    title="Cancel"
+                                    onClick={() => cancel(elem)} />
                             </>
                         ) : null}
                     </div>
