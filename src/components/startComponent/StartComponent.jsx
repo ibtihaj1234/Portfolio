@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './style.css'
 import { Link } from 'react-router-dom'
 
+
 const StartComponent = () => {
 
     const [second, setSecond] = useState(59)
@@ -28,7 +29,6 @@ const StartComponent = () => {
         }, 1000)
         return () => clearInterval(timer)
     })
-
 
     return (
         <div className='page'>
