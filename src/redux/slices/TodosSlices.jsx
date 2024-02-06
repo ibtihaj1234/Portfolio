@@ -6,11 +6,14 @@ export const TodosSlices = createSlice({
     items: []
   },
   reducers: {
-    addTodo: function (state, action){
+    addTodo: function (state, action) {
       state.items.push(action.payload)
     },
+    removeTodo: function (state, action) {
+
+    }
   }
 })
 
-export const {addTodo} = TodosSlices.actions;
+export const { addTodo } = TodosSlices.actions;
 export default TodosSlices.reducer;
