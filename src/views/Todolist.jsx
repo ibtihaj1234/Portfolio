@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import Input from '../components/input/Input'
+import Input from '../components/todoList/input/Input'
 import Navbar from '../components/navbar/Navbar'
-import Todos from '../components/todos/Todos'
+import Todos from '../components/todoList/todos/Todos'
 
 const Todolist = () => {
 

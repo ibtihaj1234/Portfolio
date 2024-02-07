@@ -1,0 +1,8 @@
+.InputButton {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 3px;
+    border-style: inherit;
+    padding: 5px;
+}

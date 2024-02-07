@@ -1,8 +1,6 @@
 import React, { } from 'react'
-// import { useDispatch, useSelector } from 'react-redux'
-// import { addTodo } from '../../redux/slices/TodosSlices'
-import ButtonComponent from '../button/Button'
-import InputComponent from '../inputComponent/InputComponent'
+import ButtonComponent from '../../button/Button'
+import InputComponent from '../../inputComponent/InputComponent'
 const Input = (props) => {
 
     const {
@@ -12,8 +10,6 @@ const Input = (props) => {
         setList
     } = props
 
-    // const Todos= useSelector((state)=>state.Todos.item)
-    // const dispatch = useDispatch()
     // InputField
 
     const itemEvent = (event) => {
@@ -26,7 +22,6 @@ const Input = (props) => {
         !item ?
             alert("Enter any thing") :
 
-            // dispatch(addTodo({id:Todos.length + 1, list , completed:false }))
             setList((prevValue) => {
                 return [...prevValue, {
                     id: list.length ? list.length + 1 : 1,

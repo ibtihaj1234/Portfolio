@@ -1,6 +1,6 @@
 import React from 'react'
-import InputComponent from '../inputComponent/InputComponent'
-import ButtonComponent from '../button/Button'
+import InputComponent from '../../inputComponent/InputComponent'
+import ButtonComponent from '../../button/Button'
 
 
 const Todos = ({
@@ -16,7 +16,6 @@ const Todos = ({
 
     // EDIT 
     const handleEdit = (elem) => {
-        // const dispatch = useDispatch(updatedTodo)
         setUpdateItem(elem)
         setTextfield(true)
     }
@@ -37,7 +36,6 @@ const Todos = ({
     // Update Button
 
     const handleUpdate = (e) => {
-        // const dispatch = useDispatch(updatedTodo)
         !newdata ? alert('Type something') :
             setList(prev =>
                 prev.map(e => e.id === updateItem.id ?

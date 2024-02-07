@@ -1,0 +1,31 @@
+.Navbar {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    z-index: 1000;
+}
+
+.Navhalf1 {
+    width: 50%;
+}
+
+.Navhalf2 {
+    width: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.Navbaritems {
+    color: orangered;
+    margin: 2%;
+    text-decoration: none;
+}
+
+.Navbaritems:hover {
+    color: white;
+}
