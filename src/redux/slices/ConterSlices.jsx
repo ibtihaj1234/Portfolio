@@ -1,4 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
+import { count } from 'mathjs';
 
 const initialState = {
     count: 0
@@ -17,6 +18,9 @@ export const CounterSlices = createSlice({
         reset: (state) => {
             state.count = 0
         },
+        addByAmount: (state) => {
+            state.count = count
+        }
     }
 })
 

@@ -1,9 +1,9 @@
-import { row } from 'mathjs'
 import React, { useState } from 'react'
+import './styles.css'
+import ButtonComponent from '../button/Button'
+import InputComponent from '../inputComponent/InputComponent'
 import { useDispatch, useSelector } from 'react-redux'
 import { decrement, increment, reset } from '../../redux/slices/ConterSlices'
-import ButtonComponent from '../button/Button'
-import './styles.css'
 
 
 const CounterComp = () => {
@@ -40,6 +40,11 @@ const CounterComp = () => {
                         title='-'
                         onClick={() => { dispatch(decrement()) }} />
                 </div>
+                <ButtonComponent
+                    title='Reset'
+                    onClick={() => { dispatch(reset()) }}
+                />
+
             </div>
         </>
     )
