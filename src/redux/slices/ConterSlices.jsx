@@ -1,5 +1,4 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { count } from 'mathjs';
 
 const initialState = {
     count: 0

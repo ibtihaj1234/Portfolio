@@ -1,5 +1,5 @@
 import React from 'react'
-import '../style.css'
+import './style.css'
 
 const InputComponent = (props) => {
     const { type, onChange, value, placeholder, style } = props
